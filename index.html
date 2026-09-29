@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VANTRA MEDIA PRODUCTION — création de contenu, vidéo, photo et production digitale.">
+  <title>VANTRA MEDIA PRODUCTION</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Vantra Media Production">
+      <img src="assets/logo.png" alt="Vantra Media Production">
+    </a>
+    <button class="menu" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="links">
+      <a href="#home">Accueil</a>
+      <a href="#about">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#work">Projets</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">MEDIA • CREATIVE • PRODUCTION</p>
+        <h1>ON CAPTURE<br><span>THE MOMENT.</span></h1>
+        <p class="hero-copy">Des images qui racontent, des vidéos qui marquent et du contenu pensé pour faire grandir votre identité.</p>
+        <div class="actions">
+          <a class="btn primary" href="#work">Voir nos projets <span>↗</span></a>
+          <a class="btn ghost" href="#contact">Nous contacter</a>
+        </div>
+      </div>
+      <div class="hero-mark">VANTRA<br><b>MEDIA</b></div>
+      <div class="scroll">SCROLL <span></span></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>Créer. Capturer.<br><em>Faire ressentir.</em></h2>
+      </div>
+      <div class="about-grid">
+        <p class="lead reveal">VANTRA MEDIA PRODUCTION accompagne les marques, artistes et projets avec une approche créative orientée image, vidéo et contenu digital.</p>
+        <div class="about-card reveal">
+          <span>V</span>
+          <p>Notre objectif : transformer une idée en une présence visuelle forte, moderne et mémorable.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 / SERVICES</p>
+        <h2>Ce qu’on <em>produit.</em></h2>
+      </div>
+      <div class="service-grid">
+        <article class="service reveal"><span>01</span><h3>VIDEO<br>PRODUCTION</h3><p>Clips, publicités, événements, aftermovies et contenus cinématiques.</p></article>
+        <article class="service reveal"><span>02</span><h3>PHOTO<br>CONTENT</h3><p>Portraits, produits, événements et visuels pour vos réseaux.</p></article>
+        <article class="service reveal"><span>03</span><h3>SOCIAL<br>CONTENT</h3><p>Reels, TikTok et formats courts pensés pour capter l’attention.</p></article>
+        <article class="service reveal"><span>04</span><h3>CREATIVE<br>DIRECTION</h3><p>Concept, direction artistique et identité visuelle de vos productions.</p></article>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 / SELECTED WORK</p>
+        <h2>Notre <em>univers.</em></h2>
+      </div>
+      <div class="work-grid">
+        <div class="work-item tall reveal"><div class="placeholder"><span>01</span><strong>VISUAL<br>STORY</strong></div></div>
+        <div class="work-item reveal"><div class="placeholder alt"><span>02</span><strong>EVENT<br>RECAP</strong></div></div>
+        <div class="work-item reveal"><div class="placeholder dark"><span>03</span><strong>SOCIAL<br>CONTENT</strong></div></div>
+        <div class="work-item wide reveal"><div class="placeholder pink"><span>04</span><strong>BRAND<br>CAMPAIGN</strong></div></div>
+      </div>
+      <p class="work-note">* Remplace ces blocs par tes photos / vidéos de projets.</p>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner reveal">
+        <p class="eyebrow">LET'S CREATE</p>
+        <h2>Votre prochain projet<br><em>commence ici.</em></h2>
+        <a class="btn primary" href="#contact">Parler du projet <span>↗</span></a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 / CONTACT</p>
+        <h2>Parlons de<br><em>votre idée.</em></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-copy reveal">
+          <p>Pour une collaboration, une production ou simplement une idée à transformer en contenu, écrivez-nous.</p>
+          <div class="socials">
+            <a href="https://www.instagram.com/vantra_media_production/" target="_blank" rel="noreferrer">Instagram ↗</a>
+            <a href="https://www.tiktok.com/@vantra_media_production" target="_blank" rel="noreferrer">TikTok ↗</a>
+          </div>
+        </div>
+        <form class="contact-form reveal" onsubmit="return sendMessage(event)">
+          <input id="name" type="text" placeholder="Votre nom" required>
+          <input id="email" type="email" placeholder="Votre email" required>
+          <textarea id="message" rows="5" placeholder="Parlez-nous de votre projet..." required></textarea>
+          <button class="btn primary" type="submit">Envoyer le message <span>↗</span></button>
+          <small id="form-status"></small>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.png" alt="Vantra">
+    <p>© <span id="year"></span> VANTRA MEDIA PRODUCTION. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
